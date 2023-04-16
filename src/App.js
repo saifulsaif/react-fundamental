@@ -8,6 +8,8 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import StyleSheet from './components/StyleSheet';
 import FormComponent from './components/FormComponent';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 
@@ -19,11 +21,15 @@ function App() {
       <FunctionClick />
       <ClassClick />
       <EventBind /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
       {/* <UserGreeting /> */}
       {/* <StyleSheet /> */}
-      <FormComponent />
-
+      {/* <FormComponent /> */}
+      <ErrorBoundary>
+        <Hero heroName="Batman" />
+        <Hero heroName="Superman" />
+        <Hero heroName="joker" />
+      </ErrorBoundary>
     </div>
   );
 }
