@@ -10,6 +10,7 @@ import StyleSheet from './components/StyleSheet';
 import FormComponent from './components/FormComponent';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
 
 
 
@@ -25,11 +26,12 @@ function App() {
       {/* <UserGreeting /> */}
       {/* <StyleSheet /> */}
       {/* <FormComponent /> */}
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <Hero heroName="Batman" />
         <Hero heroName="Superman" />
         <Hero heroName="joker" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+      <ClickCounter />
     </div>
   );
 }
