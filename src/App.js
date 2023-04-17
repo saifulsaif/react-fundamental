@@ -11,6 +11,7 @@ import FormComponent from './components/FormComponent';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
+import CounterLogic from './components/CounterLogic';
 
 
 
@@ -31,7 +32,8 @@ function App() {
         <Hero heroName="Superman" />
         <Hero heroName="joker" />
       </ErrorBoundary> */}
-      <ClickCounter />
+      {/* <ClickCounter /> */}
+      < CounterLogic render= { (count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount}  />} />
     </div>
   );
 }
