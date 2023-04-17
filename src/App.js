@@ -12,6 +12,8 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import CounterLogic from './components/CounterLogic';
+import ComponentA from './components/context/ComponentA';
+import { UserProvider } from './components/context/userContext';
 
 
 
@@ -33,7 +35,16 @@ function App() {
         <Hero heroName="joker" />
       </ErrorBoundary> */}
       {/* <ClickCounter /> */}
-      < CounterLogic render= { (count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount}  />} />
+      {/* < CounterLogic render= { (count, incrementCount) => <ClickCounter count={count} incrementCount={incrementCount}  />} /> */}
+   
+   
+      <UserProvider value="Saif Boz">
+        <ComponentA />
+      </UserProvider>
+   
+   
+   
+   
     </div>
   );
 }
